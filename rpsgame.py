@@ -8,7 +8,7 @@ while True:
 
     while player not in choices:
         player = input("rock(R), paper(P), or scissors(S)?: ").upper()
-    print ("You entered a Wrong Command, Try Again!")
+    
 
     if player == cpu:
         print("Player " ,'(',player,')',':',"CPU " ,'(',cpu,')')
@@ -17,32 +17,26 @@ while True:
 
     elif player == "R":
         if cpu == "P":
-            print( "cpu: ", cpu)
-            print("player: ", player)
+            print("Player " ,'(',player,')',':',"CPU " ,'(',cpu,')')
             print("You lose!")
         if cpu == "scissors":
-            print( "cpu: ", cpu)
-            print("player: ", player)
+            print("Player " ,'(',player,')',':',"CPU " ,'(',cpu,')')
             print("You win!")
 
     elif player == "S":
         if cpu == "R":
-            print( "cpu: ", cpu)
-            print("player: ", player)
+            print("Player " ,'(',player,')',':',"CPU " ,'(',cpu,')')
             print("You lose!")
         if cpu == "P":
-            print( "cpu: ", cpu)
-            print("player: ", player)
+            print("Player " ,'(',player,')',':',"CPU " ,'(',cpu,')')
             print("You win!")
 
     elif player == "P":
         if cpu == "S":
-            print( "cpu: ", cpu)
-            print("player: ", player)
+            print("Player " ,'(',player,')',':',"CPU " ,'(',cpu,')')
             print("You lose!")
         if cpu == "R":
-            print( "cpu: ", cpu)
-            print("player: ", player)
+            print("Player " ,'(',player,')',':',"CPU " ,'(',cpu,')')
             print("You win!")
 
     play_again = input("Play again? (yes/no): ").lower()
